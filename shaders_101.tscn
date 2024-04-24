@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3deqkg5dvbda"]
+
+[ext_resource type="Shader" path="res://shaders/shader01.gdshader" id="1_fydpl"]
+[ext_resource type="Texture2D" uid="uid://brffvny3qypeg" path="res://icon.svg" id="1_wjahu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nfnes"]
+shader = ExtResource("1_fydpl")
+shader_parameter/speed = 2.0
+
+[node name="Shaders101" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_nfnes")
+position = Vector2(578, 306)
+texture = ExtResource("1_wjahu")
